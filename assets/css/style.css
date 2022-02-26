@@ -46,8 +46,6 @@ footer {
     margin-top: 100px;
 }
 
-
-
 #terminalCodes,
 #notes {
     margin-top: 25px;
@@ -66,13 +64,15 @@ footer {
 }
 
 #terminalCodes p {
+    font-family: monospace;
+    font-style: italic;
     padding-left: 10px;
 }
 
 .codetext {
-    padding: 5px 25px;
+    padding-left: 25px;
     font-family: Courier;
-    font-weight: ;
+    font-size: .75em;
     background-color: lightgray;
     margin-left: 40px;
     width: max-content;
