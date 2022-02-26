@@ -20,19 +20,30 @@
             </ul>
         </nav>
     </header>
-    <section id="terminalCodes">
+    <section id="notes">
         <h2>Notes</h2>
-        <p>The value of the href used here—a forward slash ("/")—will always represent the path to the topmost directory of an application or project. In this case, when a user clicks the <a> element, they will be taken to the topmost directory. And because there is no file specified, the index.html file will be loaded.</p>
-        <p>HTML defines a webpage's structure, CSS defines the design, and JavaScript defines the behavior.</p>
-        <p>Separation of concerns,: It's better to keep code that serves different purposes in separate files so that it's easier to maintain.</p>
-        <p>hero image refers to a large banner image placed prominently at the top of the page. The placement has a specific task: to pique the visitor's curiosity enough to get them reading, scrolling, clicking, and engaging with the website. Think of the hero section as the banner, headline, or billboard for a website.</p>
-            
+        <ul>
+            <li>
+                <p>The value of the href used here—a forward slash ("/")—will always represent the path to the topmost directory of an application or project. In this case, when a user clicks the <a> element, they will be taken to the topmost directory. And because there is no file specified, the index.html file will be loaded.</p>
+            </li>
+            <li>
+                <p>HTML defines a webpage's structure, CSS defines the design, and JavaScript defines the behavior.</p>
+            </li>
+            <li>
+                <p>Separation of concerns,: It's better to keep code that serves different purposes in separate files so that it's easier to maintain.</p>
+            </li>
+            <li>
+                <p>hero image refers to a large banner image placed prominently at the top of the page. The placement has a specific task: to pique the visitor's curiosity enough to get them reading, scrolling, clicking, and engaging with the website. Think of the hero section as the banner, headline, or billboard for a website.</p>
+            </li>
+        </ul>
+    </section>
+    <section id="terminalCodes">
         <h2>Saved Terminal Codes</h2>
         <table>
             <tr>
                 <td>
                     <p>Checks current directory for any saved .DS_Store files and removes them from the git repository</p>
-                <p class="codetext">find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</p>
+                    <p class="codetext">find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</p>
                 </td>
             </tr>
             <tr>
@@ -56,13 +67,19 @@
             <tr>
                 <td>
                     <p>Shows the commits in all of the branches whos names end in 'main'.</p>
-                    <p class="codetext">git show-branch *master</p>
+                    <p class="codetext">git show-branch *main</p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <p>Tells which remote links, if any, you've established for the project. </p>
                     <p class="codetext">git remote -v</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Use nano in command line to edit text files</p>
+                    <p class="codetext">nano file.txt</p>
                 </td>
             </tr>
 

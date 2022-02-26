@@ -46,6 +46,29 @@ footer {
     margin-top: 100px;
 }
 
+
+
+#terminalCodes,
+#notes {
+    margin-top: 25px;
+    padding-left: 25px;
+    background-color: lightgoldenrodyellow;
+    width: 1000px;
+}
+
+#notes li {
+    margin-left: 25px;
+    padding: 5px 0;
+}
+
+#terminalCodes td {
+    background-color:lightslategray;
+}
+
+#terminalCodes p {
+    padding-left: 10px;
+}
+
 .codetext {
     padding: 5px 25px;
     font-family: Courier;
@@ -53,18 +76,4 @@ footer {
     background-color: lightgray;
     margin-left: 40px;
     width: max-content;
-}
-
-#terminalCodes {
-    padding: 10px;
-    background-color: lightgoldenrodyellow;
-    width: max-content;
-}
-
-#terminalCodes td {
-    border: solid thin;
-}
-
-#terminalCodes p {
-    padding-left: 10px;
 }
