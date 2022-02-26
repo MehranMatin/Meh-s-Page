@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <title>My Notes</title>
+</head>
+<body>
+    <header>
+        <h1>My Notes</h1>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li><a href="https://github.com/MehranMatin/Coding-Repos" target="_blank">Github Repo Page</a></li>
+                <li><a href="http://courses.bootcampspot.com" target="_blank">Canvas Course</a></li>
+                <li><a href="http://127.0.0.1:5500/assets/notes.html" target="_blank">My Notes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="terminalCodes">
+        <h2>Notes</h2>
+        <p>The value of the href used here—a forward slash ("/")—will always represent the path to the topmost directory of an application or project. In this case, when a user clicks the <a> element, they will be taken to the topmost directory. And because there is no file specified, the index.html file will be loaded.</p>
+        <p>HTML defines a webpage's structure, CSS defines the design, and JavaScript defines the behavior.</p>
+        <p>Separation of concerns,: It's better to keep code that serves different purposes in separate files so that it's easier to maintain.</p>
+        <p>hero image refers to a large banner image placed prominently at the top of the page. The placement has a specific task: to pique the visitor's curiosity enough to get them reading, scrolling, clicking, and engaging with the website. Think of the hero section as the banner, headline, or billboard for a website.</p>
+            
+        <h2>Saved Terminal Codes</h2>
+        <table>
+            <tr>
+                <td>
+                    <p>Checks current directory for any saved .DS_Store files and removes them from the git repository</p>
+                <p class="codetext">find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Checks current git configurations</p>
+                    <p class="codetext">git config --list</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Brings remote references up to date.</p>
+                    <p class="codetext">git remote update</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Tells whether the branch you are tracking is ahead, behind or has diverged. If it says nothing, the local and remote arethe same.</p>
+                    <p class="codetext">git status -uno</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Shows the commits in all of the branches whos names end in 'main'.</p>
+                    <p class="codetext">git show-branch *master</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Tells which remote links, if any, you've established for the project. </p>
+                    <p class="codetext">git remote -v</p>
+                </td>
+            </tr>
+
+            <!--
+            <tr>
+                <td>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p class="codetext"></p>
+                </td>
+            </tr>
+            -->
+        </table>
+    </section>
+</body>
+</html>
