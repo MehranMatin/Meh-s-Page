@@ -1,0 +1,31 @@
+#terminalCodes,
+#notes {
+    margin-top: 25px;
+    padding-left: 25px;
+    background-color: lightgoldenrodyellow;
+    width: 1000px;
+}
+
+#notes li {
+    margin-left: 25px;
+    padding: 5px 0;
+}
+
+#terminalCodes td {
+    background-color:lightslategray;
+}
+
+#terminalCodes p {
+    font-family: monospace;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.codetext {
+    padding-left: 25px;
+    font-family: Courier;
+    font-size: .75em;
+    background-color: lightgray;
+    margin-left: 40px;
+    width: max-content;
+}
