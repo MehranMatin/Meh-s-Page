@@ -1,58 +1,165 @@
+:root {
+    --primary-color: steelblue;
+    --secondary-color: #ffcd00;
+    --tertiary-color: white;
+    --shadow-style-1: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+/* Start: Semantic Element Styling */
 body {
-    border: thin solid;
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
-header,
-footer {
+/* HEADER / NAVBAR START */
+header {
     padding: 20px 35px;
-    background-color: steelblue;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* VENDOR PREFIX 
+    Always add standardized version of a property at the end of a sequence of vendor-prefixed versions. The browser will always apply the last version that it can interpret.) */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%; */
+    box-shadow: var(--shadow-style-1);
+    z-index: 9999;
 }
 
-header h1  {
+header h1 {
     font-weight: bold;
     font-size: 36px;
     margin: 0;
-    display: inline;
+    text-shadow: var(--shadow-style-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 a {
+    margin: 0 10px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+header img {
+    width: 75px;
+    border-radius: 50%;
+    border: var(--secondary-color) solid 2px;
+    box-shadow: var(--shadow-style-1);
 }
 
 header a {
+    padding: 0 20px;
     text-decoration: none;
-    color: lightcyan;
+    color: var(--secondary-color);
+    text-shadow: var(--shadow-style-1);
 }
 
 header nav {
-    float: right;
-    margin: 7px 0;
+    margin: 5px 0;
 }
 
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    margin: 0 15px;
-    font-style: italic;
-    font-size: 18px;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 section {
-    padding: 20px 35px;
-    min-height: 100px;
+    padding: 50px;
+    box-shadow: var(--shadow-style-1);
+}
+
+section h2 {
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid 1px;
 }
 
 footer {
-
+    position: absolute;
+    bottom: 0;
+    padding: 10px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
+/* End: Semantic Element Styling */
+
+
+/* Start: Section - Intro */
+.intro {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    min-height: 100px;
+    line-height: 1.5;
+}
+
+/* Start: Section - Resources */
 
 .resources {
-    padding: 25px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
 }
 
-/* Dashboard styling start */
+.resources div ul {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.resources div ul li a {
+    text-decoration: none;
+    padding-right: 15px;
+}
+
+/* Start: Section - Projects */
+.projects {
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project article {
+    margin: 15px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border: var(--tertiary-color) solid 2px;
+    width: 300px;
+    height: 200px;
+}
+
+.project article h3,
+.project article img,
+.project p {
+    padding: 5px;
+}
+
+.project img {
+    max-width: 100px;
+
+}

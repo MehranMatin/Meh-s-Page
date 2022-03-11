@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: thin solid;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header,
+footer {
+    padding: 20px 35px;
+    background-color: steelblue;
+}
+
+header h1  {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+    color: lightcyan;
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 15px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px 35px;
+    min-height: 100px;
+}
+
+footer {
+
+}
+
+.resources {
+    padding: 25px;
+}
+
+/* Dashboard styling start */
