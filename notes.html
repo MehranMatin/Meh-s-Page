@@ -55,52 +55,76 @@
             <tr>
                 <td>
                     <p>Checks current directory for any saved .DS_Store files and removes them from the git repository</p>
-                    <p class="codetext">find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch</p>
+                    <p class="codetext">
+                        find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+                    </p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <p>Checks current git configurations</p>
-                    <p class="codetext">git config --list</p>
+                    <p class="codetext">
+                        git config --list
+                    </p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <p>Brings remote references up to date.</p>
-                    <p class="codetext">git remote update</p>
+                    <p class="codetext">
+                        git remote update
+                    </p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <p>Tells whether the branch you are tracking is ahead, behind or has diverged. If it says nothing, the local and remote arethe same.</p>
-                    <p class="codetext">git status -uno</p>
+                    <p>Tells whether the branch you are tracking is ahead, behind or has diverged. If it says nothing, the local and remote are the same.</p>
+                    <p class="codetext">
+                        git status -uno
+                    </p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <p>Shows the commits in all of the branches whos names end in 'main'.</p>
-                    <p class="codetext">git show-branch *main</p>
+                    <p class="codetext">
+                        git show-branch *main
+                    </p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <p>Tells which remote links, if any, you've established for the project. </p>
-                    <p class="codetext">git remote -v</p>
+                    <p class="codetext">
+                        git remote -v
+                    </p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <p>Use nano in command line to edit text files</p>
-                    <p class="codetext">nano file.txt</p>
+                    <p class="codetext">
+                        nano file.txt
+                    </p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <p>To change Git remote URL</p>
-                    <p class="codetext">$ git remote set-url origin https://git-repo/new-repository.git</p>
+                    <p class="codetext">
+                        $ git remote set-url origin https://git-repo/new-repository.git
+                    </p>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <p>How to get all remote branches into local repo</p>
+                    <p class="codetext">
+                        for remote in `git branch -r`; do git branch --track ${remote#origin/} $remote; done
 
+                    </p>
+                </td>
+            </tr>
             <!--
             <tr>
                 <td>
