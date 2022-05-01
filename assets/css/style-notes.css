@@ -12,19 +12,18 @@
 }
 
 #terminalCodes td {
+    color: white;
     background-color:lightslategray;
 }
 
 #terminalCodes p {
-    font-family: monospace;
-    font-style: italic;
-    padding-left: 10px;
+    padding: 5px 10px;
 }
 
-.codetext {
-    padding-left: 25px;
+#terminalCodes .codetext {
+    color: black;
     font-family: Courier;
-    font-size: .75em;
+    font-weight: bold;
     background-color: lightgray;
     margin-left: 40px;
     width: max-content;
