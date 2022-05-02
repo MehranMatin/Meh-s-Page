@@ -11,7 +11,7 @@
         <h1>My Notes</h1>
         <nav>
             <ul>
-                <li><a href="http://127.0.0.1:5501/index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="https://github.com/MehranMatin/Coding-Repos" target="_blank">Github Repo Page</a></li>
                 <li><a href="http://courses.bootcampspot.com" target="_blank">Canvas Course</a></li>
                 <li><a href="/notes.html">My Notes</a></li>
@@ -123,6 +123,12 @@
                         for remote in `git branch -r`; do git branch --track ${remote#origin/} $remote; done
 
                     </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>How to add space tile to mbp dock</p>
+                    <p class="codetext">defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock</p>
                 </td>
             </tr>
             <!--
