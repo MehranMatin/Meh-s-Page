@@ -22,6 +22,8 @@
     <section id="notes">
         <h2>Notes</h2>
         <ul>
+            <li>If you forget which properties each api object has, you can check the Preview panel in the DevTools Network tab, load the requested URL in another browser tab, or console.log() the response data.</li>
+            <li>When <strong>using fetch() to create a request, the request might go one of two ways:</strong><br>The request may find its destination URL and attempt to get the data in question, which would get returned into the .then() method;<br>if the request fails, that error will be sent to the .catch() method.</li>
             <li><strong>Check if request was successful by using the ok property</strong> that's bundled in the response object from fetch(). When the HTTP request status code is something in the 200s, the ok property will be true.</li>
             <li><strong>event.preventDefault()</strong> stops the browser from performing the default action the event wants it to do. In the case of submitting a form, it prevents the browser from sending the form's input data to a URL, as we'll handle what happens with the form input data ourselves in JavaScript.</li>
             <li><strong>Asynchronous communication with a server is often referred to as AJAX</strong>, which stands for Asynchronous JavaScript and XML. The XML in this term refers to an old-fashioned way of formatting data. XML has been largely replaced by JSON, but the name has persisted.</li>
