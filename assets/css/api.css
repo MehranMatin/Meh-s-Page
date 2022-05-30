@@ -1,6 +1,14 @@
+/* section {
+    display: flex;
+}
 
 section div {
-    width: 30%;
     display: flex;
     flex-direction: column;
 }
+
+section div h3 {
+    height: 40px;
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+} */
